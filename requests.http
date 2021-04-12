@@ -1,0 +1,76 @@
+### Get Attributs des Wilders
+Get https://http-practice.herokuapp.com/wilders
+Accept: application/json
+
+### Get Wilders => PHP
+Get https://http-practice.herokuapp.com/wilders?language=PHP
+Accept: application/json
+
+### Get Wilders => Java
+Get https://http-practice.herokuapp.com/wilders?language=Java
+Accept: application/json
+
+### Get Wilders => JavaScript & page 2
+Get https://http-practice.herokuapp.com/wilders?language=JavaScript&page=2
+Accept: application/json
+
+### Get Wilders => JavaScript
+Get https://http-practice.herokuapp.com/wilders?language=JavaScript
+Accept: application/json
+
+### Get Wilders 
+Get https://http-practice.herokuapp.com/wilders?page4
+Accept: application/json
+
+### Get Wilders => CSharp
+Get https://http-practice.herokuapp.com/wilders?language=CSharp
+Accept: application/json
+
+### Get Wilders => Page 1000000
+Get https://http-practice.herokuapp.com/wilders?page=1000000
+Accept: application/json
+
+### Ajout d'un Wilder
+POST https://http-practice.herokuapp.com/wilders
+Content-Type: application/x-www-form-urlencoded
+
+name=Denis%20Machet&language=JavaScript
+
+### Requête en format json
+POST https://http-practice.herokuapp.com/wilders
+Content-Type: application/json
+
+{
+  "name": "Jacques Henry",
+  "language": "PHP"
+}
+
+###Interrogation de l'id
+Get https://http-practice.herokuapp.com/wilders/1645335
+
+###Interrogation dun 'id très élevé
+Get https://http-practice.herokuapp.com/wilders/3331645335
+
+### Ajout d'un Wilder incomplet
+POST https://http-practice.herokuapp.com/wilders
+Content-Type: application/x-www-form-urlencoded
+
+name=%20Manque&language=PHP
+
+### Ajout d'un Wilder
+POST https://http-practice.herokuapp.com/wilders
+Content-Type: application/x-www-form-urlencoded
+
+name=Defil%20Jacqueline&language=Java
+
+### Modification d'un Wilder
+PUT https://http-practice.herokuapp.com/wilders/1645337
+Content-Type: application/x-www-form-urlencoded
+
+name=Devil%20Jacqueline&language=Java
+
+### Suppression d'un Wilder
+DELETE https://http-practice.herokuapp.com/wilders/1645337
+Content-Type: application/x-www-form-urlencoded
+
+name=Devil%20Jacqueline&language=Java
